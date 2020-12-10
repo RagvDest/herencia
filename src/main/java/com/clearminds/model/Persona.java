@@ -31,4 +31,10 @@ public class Persona {
 		this.ciudadActual = ciudadActual;
 		this.nacionalidad = nacionalidad;
 	}
+	@Override
+	public String toString() {
+		return "Persona [ciudadNacimiento=" + ciudadNacimiento + ", ciudadActual=" + ciudadActual + ", nacionalidad="
+				+ nacionalidad + "]";
+	}
+	
 }
