@@ -14,16 +14,9 @@ public class TestManager {
 
 	public static void main(String[] args) {
 		try {
-			Properties p = new Properties();
-			File f=new File("config.properties");
-			p.load(new FileReader("config.properties"));
-			PersonaManager pManager = new PersonaManager(p.getProperty("instancia"));
+			PersonaManager pManager = new PersonaManager();
 			pManager.insertarPersona(new Persona("Portoviejo","Quito","Ecuatoriana"));
 		} catch (InstanceException e) {
-			e.printStackTrace();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
