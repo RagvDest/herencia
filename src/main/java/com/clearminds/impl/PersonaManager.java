@@ -16,7 +16,6 @@ public class PersonaManager {
 	public PersonaManager() throws InstanceException {
 		super();
 		try {
-			
 			this.srv = (ServicioPersona)obtenerClasePropiedad().newInstance();
 		} catch (Exception e) {
 			e.printStackTrace();
